@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                
+                Reddot\\Employee\\Management\\PackageServiceProvider
             ]
         }
     },
