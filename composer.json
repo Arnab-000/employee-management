@@ -1,0 +1,37 @@
+{
+    "name": "reddot/employee-management",
+    "description": "A custom package for employee management.",
+    "version" : "1.11.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "",
+            "email": ""
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^10.0|^9.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reddot\\Employee\\Management\\": "src/",
+            "ProcessMaker\\Models\\": "src/Models/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Reddot\\Employee\\Management\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reddot\\Employee\\Management\\PackageServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
